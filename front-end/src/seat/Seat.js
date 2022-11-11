@@ -40,7 +40,7 @@ export default function Seat() {
     } catch (error) {
       setError(error);
     }
-    return () => abortCont.abort();
+    return () => con.abort();
   }
 
   function handleCancel() {

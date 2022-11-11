@@ -148,7 +148,6 @@ const reservationExists = async (req, res, next) => {
 //Create, Read, Update, Delete functionality, making requests to the DB utilizing express's built in functionality req, res etc..
 async function list(req, res) {
   const { date, mobile_number } = req.query;
-  console.log(date);
   let reservations;
   if (mobile_number) {
     reservations = await service.search(mobile_number);

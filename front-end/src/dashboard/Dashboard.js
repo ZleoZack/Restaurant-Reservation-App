@@ -13,7 +13,6 @@ import TableList from "./TableList/TableList";
  * @returns {JSX.Element}
  */
 function Dashboard({ date }) {
-  console.log(date);
   const [reservations, setReservations] = useState([]);
   const [tables, setTables] = useState([]);
   const [reservationsError, setReservationsError] = useState(null);
